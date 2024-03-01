@@ -25,13 +25,11 @@ mikrotik:
   - name: sysUpTime
     oid: 1.3.6.1.2.1.1.3
     type: gauge
-    help: The time (in hundredths of a second) since the network management portion
-      of the system was last re-initialized. - 1.3.6.1.2.1.1.3
+    help: The time (in hundredths of a second) since the network management portion of the system was last re-initialized. - 1.3.6.1.2.1.1.3
   - name: ifNumber
     oid: 1.3.6.1.2.1.2.1
     type: gauge
-    help: The number of network interfaces (regardless of their current state) present
-      on this system. - 1.3.6.1.2.1.2.1
+    help: The number of network interfaces (regardless of their current state) present on this system. - 1.3.6.1.2.1.2.1
   - name: ifIndex
     oid: 1.3.6.1.2.1.2.2.1.1
     type: gauge
@@ -451,8 +449,7 @@ mikrotik:
   - name: ifLastChange
     oid: 1.3.6.1.2.1.2.2.1.9
     type: gauge
-    help: The value of sysUpTime at the time the interface entered its current operational
-      state - 1.3.6.1.2.1.2.2.1.9
+    help: The value of sysUpTime at the time the interface entered its current operational state - 1.3.6.1.2.1.2.2.1.9
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -479,8 +476,7 @@ mikrotik:
   - name: ifInUcastPkts
     oid: 1.3.6.1.2.1.2.2.1.11
     type: counter
-    help: The number of packets, delivered by this sub-layer to a higher (sub-)layer,
-      which were not addressed to a multicast or broadcast address at this sub-layer
+    help: The number of packets, delivered by this sub-layer to a higher (sub-)layer, which were not addressed to a multicast or broadcast address at this sub-layer
       - 1.3.6.1.2.1.2.2.1.11
     indexes:
     - labelname: ifIndex
@@ -494,9 +490,7 @@ mikrotik:
   - name: ifInNUcastPkts
     oid: 1.3.6.1.2.1.2.2.1.12
     type: counter
-    help: The number of packets, delivered by this sub-layer to a higher (sub-)layer,
-      which were addressed to a multicast or broadcast address at this sub-layer -
-      1.3.6.1.2.1.2.2.1.12
+    help: The number of packets, delivered by this sub-layer to a higher (sub-)layer, which were addressed to a multicast or broadcast address at this sub-layer - 1.3.6.1.2.1.2.2.1.12
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -509,9 +503,7 @@ mikrotik:
   - name: ifInDiscards
     oid: 1.3.6.1.2.1.2.2.1.13
     type: counter
-    help: The number of inbound packets which were chosen to be discarded even though
-      no errors had been detected to prevent their being deliverable to a higher-layer
-      protocol - 1.3.6.1.2.1.2.2.1.13
+    help: The number of inbound packets which were chosen to be discarded even though no errors had been detected to prevent their being deliverable to a higher-layer protocol - 1.3.6.1.2.1.2.2.1.13
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -524,8 +516,7 @@ mikrotik:
   - name: ifInErrors
     oid: 1.3.6.1.2.1.2.2.1.14
     type: counter
-    help: For packet-oriented interfaces, the number of inbound packets that contained
-      errors preventing them from being deliverable to a higher-layer protocol - 1.3.6.1.2.1.2.2.1.14
+    help: For packet-oriented interfaces, the number of inbound packets that contained errors preventing them from being deliverable to a higher-layer protocol - 1.3.6.1.2.1.2.2.1.14
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -538,8 +529,7 @@ mikrotik:
   - name: ifInUnknownProtos
     oid: 1.3.6.1.2.1.2.2.1.15
     type: counter
-    help: For packet-oriented interfaces, the number of packets received via the interface
-      which were discarded because of an unknown or unsupported protocol - 1.3.6.1.2.1.2.2.1.15
+    help: For packet-oriented interfaces, the number of packets received via the interface which were discarded because of an unknown or unsupported protocol - 1.3.6.1.2.1.2.2.1.15
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -552,8 +542,7 @@ mikrotik:
   - name: ifOutOctets
     oid: 1.3.6.1.2.1.2.2.1.16
     type: counter
-    help: The total number of octets transmitted out of the interface, including framing
-      characters - 1.3.6.1.2.1.2.2.1.16
+    help: The total number of octets transmitted out of the interface, including framing characters - 1.3.6.1.2.1.2.2.1.16
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -566,9 +555,7 @@ mikrotik:
   - name: ifOutUcastPkts
     oid: 1.3.6.1.2.1.2.2.1.17
     type: counter
-    help: The total number of packets that higher-level protocols requested be transmitted,
-      and which were not addressed to a multicast or broadcast address at this sub-layer,
-      including those that were discarded or not sent - 1.3.6.1.2.1.2.2.1.17
+    help: The total number of packets that higher-level protocols requested be transmitted, and which were not addressed to a multicast or broadcast address at this sub-layer, including those that were discarded or not sent - 1.3.6.1.2.1.2.2.1.17
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -581,9 +568,7 @@ mikrotik:
   - name: ifOutNUcastPkts
     oid: 1.3.6.1.2.1.2.2.1.18
     type: counter
-    help: The total number of packets that higher-level protocols requested be transmitted,
-      and which were addressed to a multicast or broadcast address at this sub-layer,
-      including those that were discarded or not sent - 1.3.6.1.2.1.2.2.1.18
+    help: The total number of packets that higher-level protocols requested be transmitted, and which were addressed to a multicast or broadcast address at this sub-layer, including those that were discarded or not sent - 1.3.6.1.2.1.2.2.1.18
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -596,8 +581,7 @@ mikrotik:
   - name: ifOutDiscards
     oid: 1.3.6.1.2.1.2.2.1.19
     type: counter
-    help: The number of outbound packets which were chosen to be discarded even though
-      no errors had been detected to prevent their being transmitted - 1.3.6.1.2.1.2.2.1.19
+    help: The number of outbound packets which were chosen to be discarded even though no errors had been detected to prevent their being transmitted - 1.3.6.1.2.1.2.2.1.19
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -610,8 +594,7 @@ mikrotik:
   - name: ifOutErrors
     oid: 1.3.6.1.2.1.2.2.1.20
     type: counter
-    help: For packet-oriented interfaces, the number of outbound packets that could
-      not be transmitted because of errors - 1.3.6.1.2.1.2.2.1.20
+    help: For packet-oriented interfaces, the number of outbound packets that could not be transmitted because of errors - 1.3.6.1.2.1.2.2.1.20
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -637,8 +620,7 @@ mikrotik:
   - name: ifSpecific
     oid: 1.3.6.1.2.1.2.2.1.22
     type: OctetString
-    help: A reference to MIB definitions specific to the particular media being used
-      to realize the interface - 1.3.6.1.2.1.2.2.1.22
+    help: A reference to MIB definitions specific to the particular media being used to realize the interface - 1.3.6.1.2.1.2.2.1.22
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -659,9 +641,7 @@ mikrotik:
   - name: hrSystemInitialLoadDevice
     oid: 1.3.6.1.2.1.25.1.3
     type: gauge
-    help: The index of the hrDeviceEntry for the device from which this host is configured
-      to load its initial operating system configuration (i.e., which operating system
-      code and/or boot parameters) - 1.3.6.1.2.1.25.1.3
+    help: The index of the hrDeviceEntry for the device from which this host is configured to load its initial operating system configuration (i.e., which operating system code and/or boot parameters) - 1.3.6.1.2.1.25.1.3
   - name: hrSystemInitialLoadParameters
     oid: 1.3.6.1.2.1.25.1.4
     type: OctetString
@@ -683,8 +663,7 @@ mikrotik:
   - name: hrMemorySize
     oid: 1.3.6.1.2.1.25.2.2
     type: gauge
-    help: The amount of physical read-write main memory, typically RAM, contained
-      by the host. - 1.3.6.1.2.1.25.2.2
+    help: The amount of physical read-write main memory, typically RAM, contained by the host. - 1.3.6.1.2.1.25.2.2
   - name: hrStorageIndex
     oid: 1.3.6.1.2.1.25.2.3.1.1
     type: gauge
@@ -714,8 +693,7 @@ mikrotik:
   - name: hrStorageDescr
     oid: 1.3.6.1.2.1.25.2.3.1.3
     type: DisplayString
-    help: A description of the type and instance of the storage described by this
-      entry. - 1.3.6.1.2.1.25.2.3.1.3
+    help: A description of the type and instance of the storage described by this entry. - 1.3.6.1.2.1.25.2.3.1.3
     indexes:
     - labelname: hrStorageIndex
       type: gauge
@@ -755,8 +733,7 @@ mikrotik:
   - name: hrStorageUsed
     oid: 1.3.6.1.2.1.25.2.3.1.6
     type: gauge
-    help: The amount of the storage represented by this entry that is allocated, in
-      units of hrStorageAllocationUnits. - 1.3.6.1.2.1.25.2.3.1.6
+    help: The amount of the storage represented by this entry that is allocated, in units of hrStorageAllocationUnits. - 1.3.6.1.2.1.25.2.3.1.6
     indexes:
     - labelname: hrStorageIndex
       type: gauge
@@ -769,8 +746,7 @@ mikrotik:
   - name: hrStorageAllocationFailures
     oid: 1.3.6.1.2.1.25.2.3.1.7
     type: counter
-    help: The number of requests for storage represented by this entry that could
-      not be honored due to not enough storage - 1.3.6.1.2.1.25.2.3.1.7
+    help: The number of requests for storage represented by this entry that could not be honored due to not enough storage - 1.3.6.1.2.1.25.2.3.1.7
     indexes:
     - labelname: hrStorageIndex
       type: gauge
@@ -797,8 +773,7 @@ mikrotik:
   - name: hrDeviceDescr
     oid: 1.3.6.1.2.1.25.3.2.1.3
     type: DisplayString
-    help: A textual description of this device, including the device's manufacturer
-      and revision, and optionally, its serial number. - 1.3.6.1.2.1.25.3.2.1.3
+    help: A textual description of this device, including the device's manufacturer and revision, and optionally, its serial number. - 1.3.6.1.2.1.25.3.2.1.3
     indexes:
     - labelname: hrDeviceIndex
       type: gauge
@@ -812,8 +787,7 @@ mikrotik:
   - name: hrDeviceStatus
     oid: 1.3.6.1.2.1.25.3.2.1.5
     type: gauge
-    help: The current operational state of the device described by this row of the
-      table - 1.3.6.1.2.1.25.3.2.1.5
+    help: The current operational state of the device described by this row of the table - 1.3.6.1.2.1.25.3.2.1.5
     indexes:
     - labelname: hrDeviceIndex
       type: gauge
@@ -840,8 +814,7 @@ mikrotik:
   - name: hrProcessorLoad
     oid: 1.3.6.1.2.1.25.3.3.1.2
     type: gauge
-    help: The average, over the last minute, of the percentage of time that this processor
-      was not idle - 1.3.6.1.2.1.25.3.3.1.2
+    help: The average, over the last minute, of the percentage of time that this processor was not idle - 1.3.6.1.2.1.25.3.3.1.2
     indexes:
     - labelname: hrDeviceIndex
       type: gauge
@@ -938,8 +911,7 @@ mikrotik:
   - name: hrPartitionID
     oid: 1.3.6.1.2.1.25.3.7.1.3
     type: OctetString
-    help: A descriptor which uniquely represents this partition to the responsible
-      operating system - 1.3.6.1.2.1.25.3.7.1.3
+    help: A descriptor which uniquely represents this partition to the responsible operating system - 1.3.6.1.2.1.25.3.7.1.3
     indexes:
     - labelname: hrDeviceIndex
       type: gauge
@@ -995,8 +967,7 @@ mikrotik:
   - name: hrFSAccess
     oid: 1.3.6.1.2.1.25.3.8.1.5
     type: gauge
-    help: An indication if this file system is logically configured by the operating
-      system to be readable and writable or only readable - 1.3.6.1.2.1.25.3.8.1.5
+    help: An indication if this file system is logically configured by the operating system to be readable and writable or only readable - 1.3.6.1.2.1.25.3.8.1.5
     indexes:
     - labelname: hrFSIndex
       type: gauge
@@ -1016,32 +987,28 @@ mikrotik:
   - name: hrFSStorageIndex
     oid: 1.3.6.1.2.1.25.3.8.1.7
     type: gauge
-    help: The index of the hrStorageEntry that represents information about this file
-      system - 1.3.6.1.2.1.25.3.8.1.7
+    help: The index of the hrStorageEntry that represents information about this file system - 1.3.6.1.2.1.25.3.8.1.7
     indexes:
     - labelname: hrFSIndex
       type: gauge
   - name: hrFSLastFullBackupDate
     oid: 1.3.6.1.2.1.25.3.8.1.8
     type: DateAndTime
-    help: The last date at which this complete file system was copied to another storage
-      device for backup - 1.3.6.1.2.1.25.3.8.1.8
+    help: The last date at which this complete file system was copied to another storage device for backup - 1.3.6.1.2.1.25.3.8.1.8
     indexes:
     - labelname: hrFSIndex
       type: gauge
   - name: hrFSLastPartialBackupDate
     oid: 1.3.6.1.2.1.25.3.8.1.9
     type: DateAndTime
-    help: The last date at which a portion of this file system was copied to another
-      storage device for backup - 1.3.6.1.2.1.25.3.8.1.9
+    help: The last date at which a portion of this file system was copied to another storage device for backup - 1.3.6.1.2.1.25.3.8.1.9
     indexes:
     - labelname: hrFSIndex
       type: gauge
   - name: hrSWOSIndex
     oid: 1.3.6.1.2.1.25.4.1
     type: gauge
-    help: The value of the hrSWRunIndex for the hrSWRunEntry that represents the primary
-      operating system running on this host - 1.3.6.1.2.1.25.4.1
+    help: The value of the hrSWRunIndex for the hrSWRunEntry that represents the primary operating system running on this host - 1.3.6.1.2.1.25.4.1
   - name: hrSWRunIndex
     oid: 1.3.6.1.2.1.25.4.2.1.1
     type: gauge
@@ -1052,8 +1019,7 @@ mikrotik:
   - name: hrSWRunName
     oid: 1.3.6.1.2.1.25.4.2.1.2
     type: OctetString
-    help: A textual description of this running piece of software, including the manufacturer,
-      revision, and the name by which it is commonly known - 1.3.6.1.2.1.25.4.2.1.2
+    help: A textual description of this running piece of software, including the manufacturer, revision, and the name by which it is commonly known - 1.3.6.1.2.1.25.4.2.1.2
     indexes:
     - labelname: hrSWRunIndex
       type: gauge
@@ -1074,8 +1040,7 @@ mikrotik:
   - name: hrSWRunParameters
     oid: 1.3.6.1.2.1.25.4.2.1.5
     type: OctetString
-    help: A description of the parameters supplied to this software when it was initially
-      loaded. - 1.3.6.1.2.1.25.4.2.1.5
+    help: A description of the parameters supplied to this software when it was initially loaded. - 1.3.6.1.2.1.25.4.2.1.5
     indexes:
     - labelname: hrSWRunIndex
       type: gauge
@@ -1106,8 +1071,7 @@ mikrotik:
   - name: hrSWRunPerfCPU
     oid: 1.3.6.1.2.1.25.5.1.1.1
     type: gauge
-    help: The number of centi-seconds of the total system's CPU resources consumed
-      by this process - 1.3.6.1.2.1.25.5.1.1.1
+    help: The number of centi-seconds of the total system's CPU resources consumed by this process - 1.3.6.1.2.1.25.5.1.1.1
     indexes:
     - labelname: hrSWRunIndex
       type: gauge
@@ -1138,9 +1102,7 @@ mikrotik:
   - name: hrSWInstalledName
     oid: 1.3.6.1.2.1.25.6.3.1.2
     type: OctetString
-    help: A textual description of this installed piece of software, including the
-      manufacturer, revision, the name by which it is commonly known, and optionally,
-      its serial number. - 1.3.6.1.2.1.25.6.3.1.2
+    help: A textual description of this installed piece of software, including the manufacturer, revision, the name by which it is commonly known, and optionally, its serial number. - 1.3.6.1.2.1.25.6.3.1.2
     indexes:
     - labelname: hrSWInstalledIndex
       type: gauge
@@ -1174,8 +1136,7 @@ mikrotik:
   - name: ifInMulticastPkts
     oid: 1.3.6.1.2.1.31.1.1.1.2
     type: counter
-    help: The number of packets, delivered by this sub-layer to a higher (sub-)layer,
-      which were addressed to a multicast address at this sub-layer - 1.3.6.1.2.1.31.1.1.1.2
+    help: The number of packets, delivered by this sub-layer to a higher (sub-)layer, which were addressed to a multicast address at this sub-layer - 1.3.6.1.2.1.31.1.1.1.2
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1188,8 +1149,7 @@ mikrotik:
   - name: ifInBroadcastPkts
     oid: 1.3.6.1.2.1.31.1.1.1.3
     type: counter
-    help: The number of packets, delivered by this sub-layer to a higher (sub-)layer,
-      which were addressed to a broadcast address at this sub-layer - 1.3.6.1.2.1.31.1.1.1.3
+    help: The number of packets, delivered by this sub-layer to a higher (sub-)layer, which were addressed to a broadcast address at this sub-layer - 1.3.6.1.2.1.31.1.1.1.3
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1202,9 +1162,7 @@ mikrotik:
   - name: ifOutMulticastPkts
     oid: 1.3.6.1.2.1.31.1.1.1.4
     type: counter
-    help: The total number of packets that higher-level protocols requested be transmitted,
-      and which were addressed to a multicast address at this sub-layer, including
-      those that were discarded or not sent - 1.3.6.1.2.1.31.1.1.1.4
+    help: The total number of packets that higher-level protocols requested be transmitted, and which were addressed to a multicast address at this sub-layer, including those that were discarded or not sent - 1.3.6.1.2.1.31.1.1.1.4
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1217,9 +1175,7 @@ mikrotik:
   - name: ifOutBroadcastPkts
     oid: 1.3.6.1.2.1.31.1.1.1.5
     type: counter
-    help: The total number of packets that higher-level protocols requested be transmitted,
-      and which were addressed to a broadcast address at this sub-layer, including
-      those that were discarded or not sent - 1.3.6.1.2.1.31.1.1.1.5
+    help: The total number of packets that higher-level protocols requested be transmitted, and which were addressed to a broadcast address at this sub-layer, including those that were discarded or not sent - 1.3.6.1.2.1.31.1.1.1.5
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1232,8 +1188,7 @@ mikrotik:
   - name: ifHCInOctets
     oid: 1.3.6.1.2.1.31.1.1.1.6
     type: counter
-    help: The total number of octets received on the interface, including framing
-      characters - 1.3.6.1.2.1.31.1.1.1.6
+    help: The total number of octets received on the interface, including framing characters - 1.3.6.1.2.1.31.1.1.1.6
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1246,9 +1201,7 @@ mikrotik:
   - name: ifHCInUcastPkts
     oid: 1.3.6.1.2.1.31.1.1.1.7
     type: counter
-    help: The number of packets, delivered by this sub-layer to a higher (sub-)layer,
-      which were not addressed to a multicast or broadcast address at this sub-layer
-      - 1.3.6.1.2.1.31.1.1.1.7
+    help: The number of packets, delivered by this sub-layer to a higher (sub-)layer, which were not addressed to a multicast or broadcast address at this sub-layer - 1.3.6.1.2.1.31.1.1.1.7
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1261,8 +1214,7 @@ mikrotik:
   - name: ifHCInMulticastPkts
     oid: 1.3.6.1.2.1.31.1.1.1.8
     type: counter
-    help: The number of packets, delivered by this sub-layer to a higher (sub-)layer,
-      which were addressed to a multicast address at this sub-layer - 1.3.6.1.2.1.31.1.1.1.8
+    help: The number of packets, delivered by this sub-layer to a higher (sub-)layer, which were addressed to a multicast address at this sub-layer - 1.3.6.1.2.1.31.1.1.1.8
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1275,8 +1227,7 @@ mikrotik:
   - name: ifHCInBroadcastPkts
     oid: 1.3.6.1.2.1.31.1.1.1.9
     type: counter
-    help: The number of packets, delivered by this sub-layer to a higher (sub-)layer,
-      which were addressed to a broadcast address at this sub-layer - 1.3.6.1.2.1.31.1.1.1.9
+    help: The number of packets, delivered by this sub-layer to a higher (sub-)layer, which were addressed to a broadcast address at this sub-layer - 1.3.6.1.2.1.31.1.1.1.9
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1289,8 +1240,7 @@ mikrotik:
   - name: ifHCOutOctets
     oid: 1.3.6.1.2.1.31.1.1.1.10
     type: counter
-    help: The total number of octets transmitted out of the interface, including framing
-      characters - 1.3.6.1.2.1.31.1.1.1.10
+    help: The total number of octets transmitted out of the interface, including framing characters - 1.3.6.1.2.1.31.1.1.1.10
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1303,9 +1253,7 @@ mikrotik:
   - name: ifHCOutUcastPkts
     oid: 1.3.6.1.2.1.31.1.1.1.11
     type: counter
-    help: The total number of packets that higher-level protocols requested be transmitted,
-      and which were not addressed to a multicast or broadcast address at this sub-layer,
-      including those that were discarded or not sent - 1.3.6.1.2.1.31.1.1.1.11
+    help: The total number of packets that higher-level protocols requested be transmitted, and which were not addressed to a multicast or broadcast address at this sub-layer, including those that were discarded or not sent - 1.3.6.1.2.1.31.1.1.1.11
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1318,9 +1266,7 @@ mikrotik:
   - name: ifHCOutMulticastPkts
     oid: 1.3.6.1.2.1.31.1.1.1.12
     type: counter
-    help: The total number of packets that higher-level protocols requested be transmitted,
-      and which were addressed to a multicast address at this sub-layer, including
-      those that were discarded or not sent - 1.3.6.1.2.1.31.1.1.1.12
+    help: The total number of packets that higher-level protocols requested be transmitted, and which were addressed to a multicast address at this sub-layer, including those that were discarded or not sent - 1.3.6.1.2.1.31.1.1.1.12
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1333,9 +1279,7 @@ mikrotik:
   - name: ifHCOutBroadcastPkts
     oid: 1.3.6.1.2.1.31.1.1.1.13
     type: counter
-    help: The total number of packets that higher-level protocols requested be transmitted,
-      and which were addressed to a broadcast address at this sub-layer, including
-      those that were discarded or not sent - 1.3.6.1.2.1.31.1.1.1.13
+    help: The total number of packets that higher-level protocols requested be transmitted, and which were addressed to a broadcast address at this sub-layer, including those that were discarded or not sent - 1.3.6.1.2.1.31.1.1.1.13
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1365,8 +1309,7 @@ mikrotik:
   - name: ifHighSpeed
     oid: 1.3.6.1.2.1.31.1.1.1.15
     type: gauge
-    help: An estimate of the interface's current bandwidth in units of 1,000,000 bits
-      per second - 1.3.6.1.2.1.31.1.1.1.15
+    help: An estimate of the interface's current bandwidth in units of 1,000,000 bits per second - 1.3.6.1.2.1.31.1.1.1.15
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1379,8 +1322,7 @@ mikrotik:
   - name: ifPromiscuousMode
     oid: 1.3.6.1.2.1.31.1.1.1.16
     type: gauge
-    help: This object has a value of false(2) if this interface only accepts packets/frames
-      that are addressed to this station - 1.3.6.1.2.1.31.1.1.1.16
+    help: This object has a value of false(2) if this interface only accepts packets/frames that are addressed to this station - 1.3.6.1.2.1.31.1.1.1.16
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1396,8 +1338,7 @@ mikrotik:
   - name: ifConnectorPresent
     oid: 1.3.6.1.2.1.31.1.1.1.17
     type: gauge
-    help: This object has the value 'true(1)' if the interface sublayer has a physical
-      connector and the value 'false(2)' otherwise. - 1.3.6.1.2.1.31.1.1.1.17
+    help: This object has the value 'true(1)' if the interface sublayer has a physical connector and the value 'false(2)' otherwise. - 1.3.6.1.2.1.31.1.1.1.17
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1413,8 +1354,7 @@ mikrotik:
   - name: ifAlias
     oid: 1.3.6.1.2.1.31.1.1.1.18
     type: DisplayString
-    help: This object is an 'alias' name for the interface as specified by a network
-      manager, and provides a non-volatile 'handle' for the interface - 1.3.6.1.2.1.31.1.1.1.18
+    help: This object is an 'alias' name for the interface as specified by a network manager, and provides a non-volatile 'handle' for the interface - 1.3.6.1.2.1.31.1.1.1.18
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1427,8 +1367,7 @@ mikrotik:
   - name: ifCounterDiscontinuityTime
     oid: 1.3.6.1.2.1.31.1.1.1.19
     type: gauge
-    help: The value of sysUpTime on the most recent occasion at which any one or more
-      of this interface's counters suffered a discontinuity - 1.3.6.1.2.1.31.1.1.1.19
+    help: The value of sysUpTime on the most recent occasion at which any one or more of this interface's counters suffered a discontinuity - 1.3.6.1.2.1.31.1.1.1.19
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1441,9 +1380,7 @@ mikrotik:
   - name: ifStackHigherLayer
     oid: 1.3.6.1.2.1.31.1.2.1.1
     type: gauge
-    help: The value of ifIndex corresponding to the higher sub-layer of the relationship,
-      i.e., the sub-layer which runs on 'top' of the sub-layer identified by the corresponding
-      instance of ifStackLowerLayer - 1.3.6.1.2.1.31.1.2.1.1
+    help: The value of ifIndex corresponding to the higher sub-layer of the relationship, i.e., the sub-layer which runs on 'top' of the sub-layer identified by the corresponding instance of ifStackLowerLayer - 1.3.6.1.2.1.31.1.2.1.1
     indexes:
     - labelname: ifStackHigherLayer
       type: gauge
@@ -1452,9 +1389,7 @@ mikrotik:
   - name: ifStackLowerLayer
     oid: 1.3.6.1.2.1.31.1.2.1.2
     type: gauge
-    help: The value of ifIndex corresponding to the lower sub-layer of the relationship,
-      i.e., the sub-layer which runs 'below' the sub-layer identified by the corresponding
-      instance of ifStackHigherLayer - 1.3.6.1.2.1.31.1.2.1.2
+    help: The value of ifIndex corresponding to the lower sub-layer of the relationship, i.e., the sub-layer which runs 'below' the sub-layer identified by the corresponding instance of ifStackHigherLayer - 1.3.6.1.2.1.31.1.2.1.2
     indexes:
     - labelname: ifStackHigherLayer
       type: gauge
@@ -1479,8 +1414,7 @@ mikrotik:
   - name: ifTestId
     oid: 1.3.6.1.2.1.31.1.3.1.1
     type: gauge
-    help: This object identifies the current invocation of the interface's test. -
-      1.3.6.1.2.1.31.1.3.1.1
+    help: This object identifies the current invocation of the interface's test. - 1.3.6.1.2.1.31.1.3.1.1
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1493,8 +1427,7 @@ mikrotik:
   - name: ifTestStatus
     oid: 1.3.6.1.2.1.31.1.3.1.2
     type: gauge
-    help: This object indicates whether or not some manager currently has the necessary
-      'ownership' required to invoke a test on this interface - 1.3.6.1.2.1.31.1.3.1.2
+    help: This object indicates whether or not some manager currently has the necessary 'ownership' required to invoke a test on this interface - 1.3.6.1.2.1.31.1.3.1.2
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1510,8 +1443,7 @@ mikrotik:
   - name: ifTestType
     oid: 1.3.6.1.2.1.31.1.3.1.3
     type: OctetString
-    help: A control variable used to start and stop operator- initiated interface
-      tests - 1.3.6.1.2.1.31.1.3.1.3
+    help: A control variable used to start and stop operator- initiated interface tests - 1.3.6.1.2.1.31.1.3.1.3
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1524,8 +1456,7 @@ mikrotik:
   - name: ifTestResult
     oid: 1.3.6.1.2.1.31.1.3.1.4
     type: gauge
-    help: This object contains the result of the most recently requested test, or
-      the value none(1) if no tests have been requested since the last reset - 1.3.6.1.2.1.31.1.3.1.4
+    help: This object contains the result of the most recently requested test, or the value none(1) if no tests have been requested since the last reset - 1.3.6.1.2.1.31.1.3.1.4
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1546,8 +1477,7 @@ mikrotik:
   - name: ifTestCode
     oid: 1.3.6.1.2.1.31.1.3.1.5
     type: OctetString
-    help: This object contains a code which contains more specific information on
-      the test result, for example an error-code after a failed test - 1.3.6.1.2.1.31.1.3.1.5
+    help: This object contains a code which contains more specific information on the test result, for example an error-code after a failed test - 1.3.6.1.2.1.31.1.3.1.5
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1560,8 +1490,7 @@ mikrotik:
   - name: ifTestOwner
     oid: 1.3.6.1.2.1.31.1.3.1.6
     type: DisplayString
-    help: The entity which currently has the 'ownership' required to invoke a test
-      on this interface. - 1.3.6.1.2.1.31.1.3.1.6
+    help: The entity which currently has the 'ownership' required to invoke a test on this interface. - 1.3.6.1.2.1.31.1.3.1.6
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1574,8 +1503,7 @@ mikrotik:
   - name: ifRcvAddressAddress
     oid: 1.3.6.1.2.1.31.1.4.1.1
     type: PhysAddress48
-    help: An address for which the system will accept packets/frames on this entry's
-      interface. - 1.3.6.1.2.1.31.1.4.1.1
+    help: An address for which the system will accept packets/frames on this entry's interface. - 1.3.6.1.2.1.31.1.4.1.1
     indexes:
     - labelname: ifIndex
       type: gauge
@@ -1634,13 +1562,11 @@ mikrotik:
   - name: ifTableLastChange
     oid: 1.3.6.1.2.1.31.1.5
     type: gauge
-    help: The value of sysUpTime at the time of the last creation or deletion of an
-      entry in the ifTable - 1.3.6.1.2.1.31.1.5
+    help: The value of sysUpTime at the time of the last creation or deletion of an entry in the ifTable - 1.3.6.1.2.1.31.1.5
   - name: ifStackLastChange
     oid: 1.3.6.1.2.1.31.1.6
     type: gauge
-    help: The value of sysUpTime at the time of the last change of the (whole) interface
-      stack - 1.3.6.1.2.1.31.1.6
+    help: The value of sysUpTime at the time of the last change of the (whole) interface stack - 1.3.6.1.2.1.31.1.6
   - name: mtxrWlStatIndex
     oid: 1.3.6.1.4.1.14988.1.1.1.1.1.1
     type: gauge
