@@ -1076,13 +1076,11 @@ mikrotik:
   - name: hrSWInstalledLastChange
     oid: 1.3.6.1.2.1.25.6.1
     type: gauge
-    help: The value of sysUpTime when an entry in the hrSWInstalledTable was last
-      added, renamed, or deleted - 1.3.6.1.2.1.25.6.1
+    help: The value of sysUpTime when an entry in the hrSWInstalledTable was last added, renamed, or deleted - 1.3.6.1.2.1.25.6.1
   - name: hrSWInstalledLastUpdateTime
     oid: 1.3.6.1.2.1.25.6.2
     type: gauge
-    help: The value of sysUpTime when the hrSWInstalledTable was last completely updated
-      - 1.3.6.1.2.1.25.6.2
+    help: The value of sysUpTime when the hrSWInstalledTable was last completely updated - 1.3.6.1.2.1.25.6.2
   - name: hrSWInstalledIndex
     oid: 1.3.6.1.2.1.25.6.3.1.1
     type: gauge
