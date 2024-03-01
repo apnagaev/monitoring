@@ -944,8 +944,7 @@ mikrotik:
   - name: hrFSRemoteMountPoint
     oid: 1.3.6.1.2.1.25.3.8.1.3
     type: OctetString
-    help: A description of the name and/or address of the server that this file system
-      is mounted from - 1.3.6.1.2.1.25.3.8.1.3
+    help: A description of the name and/or address of the server that this file system is mounted from - 1.3.6.1.2.1.25.3.8.1.3
     indexes:
     - labelname: hrFSIndex
       type: gauge
