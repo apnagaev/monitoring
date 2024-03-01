@@ -842,8 +842,7 @@ mikrotik:
   - name: hrDiskStorageAccess
     oid: 1.3.6.1.2.1.25.3.6.1.1
     type: gauge
-    help: An indication if this long-term storage device is readable and writable
-      or only readable - 1.3.6.1.2.1.25.3.6.1.1
+    help: An indication if this long-term storage device is readable and writable or only readable - 1.3.6.1.2.1.25.3.6.1.1
     indexes:
     - labelname: hrDeviceIndex
       type: gauge
@@ -853,8 +852,7 @@ mikrotik:
   - name: hrDiskStorageMedia
     oid: 1.3.6.1.2.1.25.3.6.1.2
     type: gauge
-    help: An indication of the type of media used in this long- term storage device.
-      - 1.3.6.1.2.1.25.3.6.1.2
+    help: An indication of the type of media used in this long- term storage device. - 1.3.6.1.2.1.25.3.6.1.2
     indexes:
     - labelname: hrDeviceIndex
       type: gauge
